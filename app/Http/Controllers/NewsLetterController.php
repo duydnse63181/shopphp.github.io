@@ -27,7 +27,7 @@ class NewsLetterController extends Controller
      */
     public function create()
     {
-        return view('home');
+        return view('home','auth/contact');
     }
     /**
      * Store a newly created resource in storage.

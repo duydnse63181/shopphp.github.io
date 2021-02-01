@@ -12,7 +12,9 @@
     <link href="{{ URL::asset('css/price-range.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('css/animate.css') }}" rel="stylesheet">
 	<link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
+	<link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
+	<link rel="stylesheet" href="{{ URL::asset('admin/plugins/summernote/summernote-bs4.css') }}">
+	
     
   
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -137,7 +139,7 @@
 										<li><a href="{{route('website.show_page', ['id' => 1]) }}">Girl</a></li> 
                                     </ul>
                                 </li> 
-								<li><a href="#">Blog</a></li>
+								<li><a href="{{url('/blog')}}">Blog</a></li>
 								<li><a href="#">Contact</a></li>
 							</ul>
 						</div>
@@ -257,7 +259,20 @@
 	<script src="{{ URL::asset('js/jquery.scrollUp.min.js') }}"></script>
 	<script src="{{ URL::asset('js/price-range.js') }}"></script>
     <script src="{{ URL::asset('js/jquery.prettyPhoto.js') }}"></script>
-    <script src="{{ URL::asset('js/main.js') }}"></script>
+	<script src="{{ URL::asset('js/main.js') }}"></script>
+	<script src="{{ URL::asset('admin/plugins/jquery/jquery.min.js') }}"></script>
+	<!-- Bootstrap 4 -->
+	<script src="{{ URL::asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+	<!-- AdminLTE App -->
+	<script src="{{ URL::asset('admin/dist/js/adminlte.min.js') }}"></script>
+	<script src="{{ URL::asset('admin/plugins/summernote/summernote-bs4.min.js') }}"></script>
+	
+	<script>
+  $(function () {
+    // Summernote
+    $('.textarea').summernote()
+  })
+	</script>
 
 </body>
 </html>

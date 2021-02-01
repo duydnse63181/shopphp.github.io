@@ -23,6 +23,7 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+
 Route::get('/','DemoControler@showbanner');
 
 Route::get('/home','DemoControler@showbanner');
@@ -92,7 +93,7 @@ Route::get('/blog_admin',  [AdminController::class, 'indexBlog'] )->name('blog.a
 
 Route::get('/blog', [DemoControler::class, 'indexBlogView']);
 
-Route::get('/blog_details/{id}',[DemoControler::class, 'showBlog'])->name('website.show_blog');
+Route::any('/blog_details/{id}',[DemoControler::class, 'showBlog'])->name('website.show_blog');
 
 Route::get('/blog_admin/delete/{id}',[AdminController::class, 'deleteBlog'])->name('blog.admin_delete');
 
@@ -109,3 +110,9 @@ Route::post('apply-two',[
     'uses'=>'NewsLetterController@autoMail',
     'as'=>'apply-two'
 ]);
+
+Route::any('/add_comment',  [DemoControler::class, 'addComment'] )->name('add_comment');
+
+Route::get('/contact', function(){
+    return view ('auth/contact');
+});

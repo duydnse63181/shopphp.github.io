@@ -42,4 +42,9 @@ class User extends Authenticatable
     ];
 
     protected $table = 'users';
+
+    public function comments()
+{
+  return $this->hasMany('App\Comment');
+}
 }
