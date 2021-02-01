@@ -179,14 +179,19 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label>Catogoris ID</label>
-                        <input type="text" name="Catogoris_id" class="form-control" placeholder="Enter ..." value="{{$item->catogoris_id}}">
+                        <select name="Catogoris_id" class="form-control input-inline" style="width: 200px" value="{{$item->catogoris_id}}" >
+                                <option value="1">Girl</option>
+                                <option value="2">Boy</option>
+                                <option value="3">Men</option>
+                                <option value="4">Women</option>
+                            </select>
                       </div>
                     </div>
 
                     <div class="card-body pad">
                       <div class="mb-3">
                       <label>Description</label>
-                        <textarea class="textarea"  name="Description" placeholder="Enter..." type="text"
+                        <textarea class="textarea"  name="Description" placeholder="Enter..." type="input"
                           style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" value="{{$item->description}}"></textarea>
                       </div>
                     </div>
@@ -204,16 +209,21 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label>Is hot</label>
-                        <input type="text" name="Is_hot" class="form-control" placeholder="Enter ..." value="{{$item->is_hot}}">
+                        <select name="Is_hot" class="form-control input-inline" style="width: 200px" value="{{$item->is_hot}}">
+                                <option value="1">yes</option>
+                                <option value="0">no</option>
+                            </select>
                       </div>
                     </div>
 
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Is new</label>
-                        <input type="text" name="Is_new" class="form-control" placeholder="Enter ..." value="{{$item->is_new}}">
-                      </div>
+                        <label>Is New </label>
+                            <select name="Is_new" class="form-control input-inline" style="width: 200px" value="{{$item->is_new}}">
+                                <option value="1">yes</option>
+                                <option value="0">no</option>
+                            </select>
                     </div>
 
                     
