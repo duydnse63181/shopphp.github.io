@@ -179,7 +179,12 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label>Catogoris id</label>
-                        <input type="text" name="Catogoris_id" class="form-control" placeholder="Enter ...">
+                        <select name="Catogoris_id" class="form-control input-inline" style="width: 200px">
+                                <option value="1">Girl</option>
+                                <option value="2">Boy</option>
+                                <option value="3">Men</option>
+                                <option value="4">Women</option>
+                            </select>
                       </div>
                     </div>
 
@@ -202,16 +207,22 @@
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>is Hot</label>
-                        <input type="text" name="Is_hot" class="form-control" placeholder="Enter ...">
+                      <label>Is hot</label>
+                        <select name="Is_hot" class="form-control input-inline" style="width: 200px">
+                                <option value="1">yes</option>
+                                <option value="0">no</option>
+                            </select>
                       </div>
                     </div>
 
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>is New</label>
-                        <input type="text" name="Is_new" class="form-control" placeholder="Enter ...">
+                      <label>Is New </label>
+                            <select name="Is_new" class="form-control input-inline" style="width: 200px">
+                                <option value="1">yes</option>
+                                <option value="0">no</option>
+                            </select>
                       </div>
                     </div>
 
