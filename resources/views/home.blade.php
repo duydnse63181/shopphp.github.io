@@ -21,7 +21,7 @@
 						<div class="carousel-inner">
               <div class="item active">
 								<div class="col-sm-6" style="width:40%">
-									<h1><span>DDD</span>N</h1>
+									<h1><span>DD</span>N</h1>
 									<h2>Thời Trang cho mọi nhà</h2>
 									<p>Gắn kết yêu thương</p>
 									<button type="button" class="btn btn-default get">Get it now</button>
