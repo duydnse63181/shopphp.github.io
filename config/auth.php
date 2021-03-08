@@ -114,5 +114,9 @@ return [
 
     'password_timeout' => 10800,
 
-    
+    'socialite' => [
+        'drivers' => [
+            'google',
+        ],
+    ],
 ];

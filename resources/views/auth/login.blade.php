@@ -67,6 +67,8 @@
 									<div class="login-help">
 										<center><a href="{{ url('/register') }}" >Đăng ký</a></center>
 									</div>
+									<a href="{{ route('login.provider', 'google') }}" 
+      								class="btn btn-secondary">{{ __('Google Sign in') }}</a>
 								</div>
 							</div>
 						</fieldset>

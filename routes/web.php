@@ -116,3 +116,8 @@ Route::any('/add_comment',  [DemoControler::class, 'addComment'] )->name('add_co
 Route::get('/contact', function(){
     return view ('auth/contact');
 });
+
+
+Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')
+    ->name('login.provider')
+    ->where('driver', implode('|', config('auth.socialite.drivers')));
